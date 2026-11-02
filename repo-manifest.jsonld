@@ -8,8 +8,9 @@
     {
       "@id": "https://repolex.ai/r/django-commons/django-tailwind-cli/commit/15e64f1cb5c6aa0df67038bacbbaf27e1602430e",
       "git:hexsha": "15e64f1cb5c6aa0df67038bacbbaf27e1602430e",
-      "repolex:parseStatus": "ast_complete",
-      "git:tagName": "v4.8.2"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "v4.8.2",
+      "repolex:parsedAt": "2026-11-02T18:33:17.062440+00:00"
     },
     {
       "@id": "https://repolex.ai/r/django-commons/django-tailwind-cli/commit/78fc42247f618f6bbb9ef26b612e8242c3a1ac1e",
