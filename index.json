@@ -1,0 +1,11 @@
+{
+  "org": "django-commons",
+  "repo": "django-tailwind-cli",
+  "versions": [
+    {
+      "commit": "15e64f1cb5c6aa0df67038bacbbaf27e1602430e",
+      "tag": "v4.8.2",
+      "parsed_at": "2026-11-02T18:33:17.063353+00:00"
+    }
+  ]
+}

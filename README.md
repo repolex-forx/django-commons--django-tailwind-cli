@@ -1,1 +1,138 @@
-Initializing
+# Repolex Knowledge Graph of django-commons/django-tailwind-cli
+
+RDF knowledge graph data for [django-commons/django-tailwind-cli](https://github.com/django-commons/django-tailwind-cli), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download django-commons/django-tailwind-cli
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 15e64f1cb5c6aa0df67038bacbbaf27e1602430e
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 15e64f1cb5c6aa0df67038bacbbaf27e1602430e
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 07c123d0590e20a8d06cd962ad77f8d7e2ea00ec.nq.gz
+│   ├── 0b7b0c2b9a832881c0241c25f5e9bd460d35b725.nq.gz
+│   ├── 0c3a9e811acb749a38a048955fa8aca55b213e42.nq.gz
+│   ├── 11eabb9287bf43515c68ce41a0dd32c6ad9b8df2.nq.gz
+│   ├── 1201da3b4472f8c00590a8cfc38ce318bbfb3f87.nq.gz
+│   ├── 162d591b9785248ea56350ac26421bc607a03f21.nq.gz
+│   ├── 1653118f5362cf48141051cdb71f7f411cd7a3ee.nq.gz
+│   ├── 19156d38a4deece03ef673cb3f8f8a85434d6e9a.nq.gz
+│   ├── 1bdb519443a523ddf73f804cfdd8c2fa87878d01.nq.gz
+│   ├── 206433c9dd5fea6440c4ee9144d9083d2e4fad0b.nq.gz
+│   ├── 21381797ccd1af34adeb43042632770b25b71fdf.nq.gz
+│   ├── 3446c7242e3f7c50d96cfefe4667cadf76bc54fd.nq.gz
+│   ├── 37722fab35cf7edacf9913c9be3336f16f6c6281.nq.gz
+│   ├── 3a15888b88eff1f8e67e7e889bf0cc6d03d90cc3.nq.gz
+│   ├── 3de84544510f940e4ed1725eb0ead0344784a318.nq.gz
+│   ├── 3e8ba8156c0b3c1988aad68d844dce87dac488fa.nq.gz
+│   ├── 433dbbf8212de0d064c5753d0f878049b220bba8.nq.gz
+│   ├── 43c994c2d3617f947bcb5adf1933e21dabe46bb5.nq.gz
+│   ├── 45fa0788e994a8483063b871d77fc32c04555a70.nq.gz
+│   ├── 4965b291961ecf68db4ef255a0c8f62ea9a4aec8.nq.gz
+│   ├── 4a7f91ffc4db5c984a271612f7602d0afe1c9167.nq.gz
+│   ├── 4d6fe44be73330819fc5b1a3443cbd8cd14725e2.nq.gz
+│   ├── 4f1420e515cba9bf0ea338cb231fff01f671b41a.nq.gz
+│   ├── 5035d8d2362fa2477bd5bef5daa25f1090eb2c95.nq.gz
+│   ├── 50898e1a932bd1275b8b2d84c346519165b5a1d3.nq.gz
+│   ├── 514736ed0a3317c5f64efbb63ab320a19edf77b0.nq.gz
+│   ├── 5cb3ff40fee8b15b788a2050edb4baa1e88652f7.nq.gz
+│   ├── 65eff25ef5c93dd8f41c0297a12044cfed97dd84.nq.gz
+│   ├── 6608916eb2d977d6cf9bdd8df9c730b2d6da081f.nq.gz
+│   ├── 66efc0fecd1554e6e4681fcb149692591f388bf2.nq.gz
+│   ├── 7126be74074002df9c9364ae5121e6756c441462.nq.gz
+│   ├── 78bdb98c8ab70280d8143ef60f9baa4b069da200.nq.gz
+│   ├── 78caf34e38b3ffedd4c57ce35333f5c8888a5ad1.nq.gz
+│   ├── 7e2339b673022589ae260309a6779ce29eb8d236.nq.gz
+│   ├── 831e9ea42361a980ee06ab6ed23b5d787300bf05.nq.gz
+│   ├── 873688891a38239e65819d2f405a1b8199add03b.nq.gz
+│   ├── 88e9cc102d78329982b3c5900d5f2899440a7e02.nq.gz
+│   ├── 89b6dbbe7719b42043684b5fec9088c1b34aabd0.nq.gz
+│   ├── 8dcc210e4f8e5393b18e1a736441fa01d6907909.nq.gz
+│   ├── 95d21010fb2ee9d2396a7c4ad76160e6a03b2722.nq.gz
+│   ├── 9baed7618ff61477e529fdda94efc1c7d2d1ca76.nq.gz
+│   ├── 9c442840342d9b01aa8813d5e3e065de67a6c685.nq.gz
+│   ├── 9f2c241a24b0621073a726583ff4723502a229b5.nq.gz
+│   ├── a33443e8764694888ae34c5bd7cfb41e38dbb727.nq.gz
+│   ├── be11a589966cd26eb2f8b7008311e0babbd46f97.nq.gz
+│   ├── c2d9822c1b334937b01cd02d2ff03ec483268733.nq.gz
+│   ├── cc4714de91d744a01288e531949476262581c7d7.nq.gz
+│   ├── d18340bb0482485708dd180b8cd45b069832a56a.nq.gz
+│   ├── d9910ef3c1e8fb37e2c10859e901c28cca8bc82f.nq.gz
+│   ├── dbc954ed544ff9edfb138a82106fdc15a1ab672a.nq.gz
+│   ├── e0856838c1fb08dbfb8d341dec1297538d79ff3c.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── e923651644bb8bf4fae8ceeaffb5210c155ae33c.nq.gz
+│   ├── eb04ddc2ea037585851b845a372215efcf2c8b96.nq.gz
+│   ├── f00826d16422a44712e05653e330b2c7ac2df1e8.nq.gz
+│   ├── f04b13328a37d116ee71c3ee64480863468283f4.nq.gz
+│   ├── f511e4d0215f7c2af89772e40e7dfea0663aa6e9.nq.gz
+│   ├── fa1fc27e9408b018a9e2ed24deb7372797ae90dd.nq.gz
+│   └── fae92dc884495c3e21352f3d63c29f08c40abc7c.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 15e64f1cb5c6aa0df67038bacbbaf27e1602430e.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 67 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[django-commons/django-tailwind-cli](https://github.com/django-commons/django-tailwind-cli)
+
+---
+*Parsed on 2026-11-02 by [repolex](https://repolex.ai)*
